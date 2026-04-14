@@ -21,7 +21,19 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("toggle_theme_button_input_dark")?.addEventListener("click", () => toggle_theme("dark"));
     document.getElementById("toggle_theme_button_input_system")?.addEventListener("click", () => toggle_theme("system"));
 
-    document.querySelector(".auth_style_section_carousel_arrow:first-of-type")?.addEventListener("click", () => toggle_carousel_item("previous"));
-    document.querySelector(".auth_style_section_carousel_arrow:last-of-type")?.addEventListener("click", () => toggle_carousel_item("next"));
+    const passwordInput = document.getElementById("auth_form_content_password_input");
+    const passwordToggle = document.getElementById("auth_form_content_password_toggle");
+    if (passwordInput && passwordToggle) {
+        passwordToggle.addEventListener("click", () => {
+            const showing = passwordInput.type === "text";
+            passwordInput.type = showing ? "password" : "text";
+            passwordToggle.textContent = showing ? "Mostrar" : "Ocultar";
+            passwordToggle.setAttribute("aria-pressed", showing ? "false" : "true");
+            passwordToggle.setAttribute(
+                "aria-label",
+                showing ? "Mostrar senha digitada" : "Ocultar senha digitada"
+            );
+        });
+    }
 });
 
