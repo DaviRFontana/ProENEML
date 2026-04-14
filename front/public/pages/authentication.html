@@ -39,7 +39,10 @@
                 </div>
                 <div class="auth_form_content_input_container" id="auth_form_content_password_container">
                     <span class="auth_form_content_input_title" id="auth_form_content_password_title">Senha</span>
-                    <input type="password" class="auth_form_content_input" id="auth_form_content_password_input" placeholder="”pense em uma senha forte”">
+                    <div class="auth_form_content_password_wrap">
+                        <input type="password" class="auth_form_content_input" id="auth_form_content_password_input" placeholder="pense em uma senha forte*" autocomplete="current-password">
+                        <button type="button" class="auth_form_content_password_toggle" id="auth_form_content_password_toggle" aria-label="Mostrar senha digitada" aria-pressed="false">Mostrar</button>
+                    </div>
                 </div>
                 <div class="auth_form_content_terms_container" id="auth_form_content_terms_container">
                     <span id="auth_form_content_terms_text">Eu li e concordo plenamente com os <a href="#" class="highlighted_text">termos de segurança</a> e tenho total noção das <a href="#" class="highlighted_text">políticas de privacidade</a> e de uso da ProENEM Lab, ademais as diretrizes de uso.</span>
@@ -53,25 +56,21 @@
                 <button type="submit" class="auth_form_content_footer_button" id="auth_form_content_submit_button">Entrar</button>
                 <button type="submit" class="auth_form_content_footer_button" id="auth_form_content_submit_google_button"><div id="auth_form_content_submit_google_button_icon"></div>
                 <span id="auth_form_content_submit_google_button_text">Entrar com Google</span></button>
+                <span id="auth_form_content_footer_text">Não tem uma conta? <a href="#" class="highlighted_text">Crie uma agora</a></span>
             </div>
+
         </form>
     </div>
     <main id="auth_style_container" aria-label="Destaque visual">
-        <button type="button" class="auth_style_section_carousel_arrow" aria-label="Slide anterior">‹</button>
-        <div id="auth_style_section_carousel_content">
-            <div id="auth_style_section_carousel_track">
-                <div id="auth_style_section_landing_carousel">
-                    <div id="auth_style_section_first_carousel_content">
-                        <div class="auth_style_section_first_carousel_layer" id="auth_style_section_first_carousel_layer_1"></div>
-                        <div class="auth_style_section_first_carousel_layer" id="auth_style_section_first_carousel_layer_2"></div>
-                        <div class="auth_style_section_first_carousel_layer" id="auth_style_section_first_carousel_layer_3"></div>
-                    </div>
-                    <span id="auth_style_section_carousels_title">Pro<span class="highlighted_text">ENEM</span> Lab</span>
-                </div>
-            </div>
+        <span class="auth_style_section_arrow" id="auth_style_section_arrow_left">‹</span>
+        <div id="auth_style_section_first_content">
+            <div class="auth_style_section_first" id="auth_style_section_first_layer_1"></div>
+            <div class="auth_style_section_first" id="auth_style_section_first_layer_2"></div>
+            <div class="auth_style_section_first" id="auth_style_section_first_layer_3"></div>
         </div>
-        <button type="button" class="auth_style_section_carousel_arrow" aria-label="Próximo slide">›</button>
+        <span class="auth_style_section_arrow" id="auth_style_section_arrow_right">›</span>
     </main>
+    <span id="auth_style_section_title">Pro<span class="highlighted_text">ENEM</span> Lab</span>
     <script src="../js/auth.js" defer></script>
 </body>
 </html>
