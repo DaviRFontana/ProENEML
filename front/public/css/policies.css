@@ -1,0 +1,35 @@
+:root {
+    --secondary-text-color: #808080;
+}
+
+@media (prefers-color-scheme: dark) {
+    #system_header_container {
+        border-bottom: 1px solid var(--details-color);
+    }
+}
+
+body {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 96px 1fr 60px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "footer";
+    background-color: var(--background-color);
+}
+
+#system_header_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "left center right";
+    width: 100%;
+    height: 96px;
+    z-index: 100;
+    background: var(--background-color) no-repeat center center;
+    border-bottom: 1px solid var(--details-color);
+    animation: fade_in_rest_auth 1.8s ease-in-out;
+}
