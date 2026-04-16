@@ -1,0 +1,94 @@
+:root {
+    --secondary-text-color: #808080;
+    --policies-header-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    --policies-font: Raleway, system-ui, sans-serif;
+}
+
+:root:not([data-theme]) {
+    --secondary-text-color: #808080;
+}
+
+html[data-theme="light"] {
+    --secondary-text-color: #808080;
+    --policies-art-icon: url("../images/db_book.png");
+    --policies-header-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+html[data-theme="dark"] {
+    --secondary-text-color: #ffffff;
+    --policies-art-icon: url("../images/lb_book.png");
+    --policies-header-shadow: 0 0 10px 0 rgba(56, 182, 255, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+    #system_header_container {
+        border-bottom: 1px solid var(--details-color);
+    }
+}
+
+body {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 96px 1fr 60px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "footer";
+    background-color: var(--background-color);
+}
+
+#system_header_container {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "left center right";
+    width: 80%;
+    height: 96px;
+    z-index: 100;
+    background: var(--background-color) no-repeat center center;
+    border: none;
+    border-radius: 0.6rem;
+    box-shadow: var(--policies-header-shadow);
+    animation: fade_in_rest_auth 1.8s ease-in-out;
+}
+
+.system_header_container_item {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.system_header_container_left_content_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 0.1rem;
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--policies-font);
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.35;
+    transition: color 0.1s ease-in-out;
+}
+
+.system_header_container_left_content_link_icon {
+    width: 5rem;
+    height: 5rem;
+    background: var(--policies-art-icon) no-repeat center center;
+    background-size: cover;
+}
+
+
+
+/* Navegação */
+
+
+
