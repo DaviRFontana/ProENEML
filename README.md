@@ -4,8 +4,9 @@ Plataforma de estudos voltada ao ENEM, com foco em exercícios, acompanhamento d
 
 ## Status do projeto
 
-- **11/04/2026**: início do desenvolvimento.
-- **15/04/2026**: parte do front da tela de autenticação finalizada, e iniciei o desenvolvimento da página de políticas de privacidade e termos de uso
+- **11/04/2026**: Início do desenvolvimento.
+- **15/04/2026**: Parte do front da tela de autenticação quase finalizada, e iniciei o desenvolvimento da página de políticas de privacidade e termos de uso
+- **16/04/2026**: A ser feita
 
 ## Como executar (a definir)
 
