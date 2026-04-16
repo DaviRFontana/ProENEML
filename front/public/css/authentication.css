@@ -84,7 +84,6 @@ body {
     background-color: var(--background-color);
 }
 
-/* Telas extremamente pequenas: permitir rolagem horizontal quando necessário */
 @media (max-width: 320px) {
     html,
     body {
@@ -685,6 +684,7 @@ body {
     align-items: center;
     width: 100%;
     height: 100%;
+    overflow: hidden;
     padding: max(0, env(safe-area-inset-right)) max(0, env(safe-area-inset-bottom))
         max(0, env(safe-area-inset-left));
     animation: fade_in_rest_auth 1.8s ease-in-out;
@@ -716,6 +716,7 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
+    overflow: hidden;
     background: var(--auth-style-background) no-repeat left center;
     background-size: cover;
 }
