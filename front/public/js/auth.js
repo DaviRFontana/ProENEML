@@ -61,7 +61,7 @@ function verify_authentication(e) {
         resetButtonAnim(button, BTN_ERR_MS);
     }
 
-    if (!userOk) flashFieldError(usernameError, "Nome de usuário inválido");
+    if (!userOk) flashFieldError(usernameError, "Apelido inválido");
     if (!emailOk) flashFieldError(emailError, "Email inválido");
     if (!passOk) flashFieldError(passwordError, "Senha inválida");
     if (!termsOk) {
