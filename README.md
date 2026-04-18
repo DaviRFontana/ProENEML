@@ -36,7 +36,7 @@ Este repositório ainda não possui um passo-a-passo consolidado de execução. 
 
 #### Prioridade máxima
 
-1. Landing page.
+~~1. Landing page.~~
 2. Página de estatísticas.
 3. Página de exercícios:
   - filtro de questões (fácil / média / difícil)
