@@ -85,7 +85,7 @@ body {
     font-family: var(--auth-font);
 }
 
-@media (max-width: 480px), (max-height: 700px) {
+@media (max-width: 480px){
     #auth_form_content {
         gap: 0.375rem;
         padding-inline: clamp(0.75rem, 3.5vw, 1rem);
@@ -242,7 +242,7 @@ body {
     font-family: inherit;
 }
 
-@media (min-width: 1025px) and (orientation: landscape) {
+@media (min-width: 1024px) and (orientation: landscape) {
     body {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         grid-template-rows: 1fr;
@@ -855,7 +855,7 @@ body {
     animation: fade_in_rest_auth 0.45s ease-out 0.12s both;
 }
 
-@media (orientation: portrait), (max-width: 1023px), (max-height: 767px) {
+@media (orientation: portrait), (max-width: 1024px), (max-height: 767px) {
     #auth_style_container {
         display: none;
     }
